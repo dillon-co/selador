@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: phrases
+#
+#  id              :integer          not null, primary key
+#  conversation_id :integer
+#  topic_id        :integer
+#  user_id         :integer
+#  phrase_type     :integer
+#  speaker         :integer
+#  sentiment       :float
+#  statement       :string
+#  subject_name    :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  belongs_to: 
+  type: 1
+  statement: MyString
+
+two:
+  belongs_to: 
+  type: 1
+  statement: MyString

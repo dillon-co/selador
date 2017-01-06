@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: facts
+#
+#  id         :integer          not null, primary key
+#  user_id    :integer
+#  topic_id   :integer
+#  statement  :string
+#  novelty    :float
+#  truthyness :float
+#  sentiment  :float
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  novelty: 1.5
+  statement: MyString
+  truthyness: 1.5
+  sentiment: 1.5
+
+two:
+  user: two
+  novelty: 1.5
+  statement: MyString
+  truthyness: 1.5
+  sentiment: 1.5
