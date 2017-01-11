@@ -13,4 +13,21 @@
 class Conversation < ApplicationRecord
   belongs_to :user
   has_many :phrases
+
+  after_create :initialize_conversation
+
+  def initialize_conversation
+    user_facts = self.user.facts
+    previous_conversations = Conversation.where(user_id: user_id)
+    user_facts == nil ? learn_about_user : get_topic(previous_conversations)
+  end
+
+  def learn_about_user
+    
+  end
+
+  def get_topic(previous_conversations)
+
+  end
+
 end

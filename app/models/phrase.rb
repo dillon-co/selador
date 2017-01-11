@@ -19,13 +19,10 @@ class Phrase < ApplicationRecord
   belongs_to :conversation
   belongs_to :topic
 
-
-  enum phrase_type: { 
-                      question: 0, 
-                      statement: 1, 
-                      speculation: 2 
+  enum phrase_type: {
+                      question: 0,
+                      statement: 1,
+                      speculation: 2
                     }
-
-
   
 end
